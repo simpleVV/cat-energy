@@ -1,0 +1,46 @@
+.contacts {
+  outline: 2px solid blue;
+}
+
+.contacts__container {
+  outline: 2px solid green;
+
+  padding-left: 19px;
+  padding-right: 19px;
+}
+
+.contacts__intro {
+  outline: 2px solid green;
+
+  margin: 0;
+
+  font-family: @font-family-oswald;
+  font-weight: @font-weight-base;
+  font-size: 16px;
+}
+
+.contacts__address {
+  outline: 2px solid green;
+
+  line-height: 20px;
+  color: @grey-44;
+}
+
+.contacts__street,
+.contacts__city {
+  outline: 2px solid red;
+
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__intro {
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

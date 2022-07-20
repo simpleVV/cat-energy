@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__layout">
+      <div class="page-header__container">
         <a class="page-header__logo logo logo--header" href="#">
           <img
             class="logo__image logo__image--header"
@@ -20,20 +21,22 @@
         <nav class="main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="#">Главная</a>
+              <a class="site-list__link" href="#">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="site-list__link" href="catalog.html"
+                >Каталог продукции</a
+              >
             </li>
             <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
+              <a class="site-list__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
       </div>
 
       <section class="page-header__intro intro">
-        <div class="intro__layout">
+        <div class="intro__container">
           <h2 class="intro__title">Функциональное питание для котов</h2>
           <p class="intro__slogan">Занялся собой? Займись котом!</p>
           <img
@@ -56,7 +59,7 @@
       </h1>
 
       <section class="offers">
-        <div class="offers__layout">
+        <div class="offers__container">
           <ul class="offers__list">
             <li class="offers__item offer-card offer-card--slim">
               <h3 class="offer-card__title">Похудение</h3>
@@ -65,9 +68,7 @@
                 по деревьям? Пора на диету! Cat Energy Slim поможет вашему
                 питомцу сбросить лишний вес.
               </p>
-              <a class="offer-card__catalog-link" href="catalog.html"
-                >Каталог Slim
-              </a>
+              <a class="offer-card__link" href="catalog.html">Каталог Slim </a>
             </li>
             <li class="offers__item offer-card offer-card--pro">
               <h3 class="offer-card__title">Набор массы</h3>
@@ -76,16 +77,14 @@
                 по деревьям? Пора на диету! Cat Energy Slim поможет вашему
                 питомцу сбросить лишний вес.
               </p>
-              <a class="offer-card__catalog-link" href="catalog.html"
-                >Каталог Pro
-              </a>
+              <a class="offer-card__link" href="catalog.html">Каталог Pro </a>
             </li>
           </ul>
         </div>
       </section>
 
       <section class="advantages">
-        <div class="advantages__layout">
+        <div class="advantages__container">
           <h2 class="advantages__title">Как это работает</h2>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--health">
@@ -117,7 +116,7 @@
       </section>
 
       <section class="example">
-        <div class="example__layout">
+        <div class="example__container">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__description">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
@@ -190,13 +189,15 @@
     </main>
 
     <footer class="page-footer">
-      <!-- <div class="page-footer__layout"></div> -->
+      <!-- <div class="page-footer__container"></div> -->
       <section class="contacts">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <b class="contacts__intro">Приглашаем к сотрудничеству дилеров!</b>
-        <div class="contacts__address">
-          <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="contacts__city">Санкт-Петербург</p>
+        <div class="contacts__container">
+          <h2 class="visually-hidden">Наши контакты</h2>
+          <b class="contacts__intro">Приглашаем к сотрудничеству дилеров!</b>
+          <div class="contacts__address">
+            <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__city">Санкт-Петербург</p>
+          </div>
         </div>
       </section>
       <section class="page-footer__map map">
@@ -209,7 +210,7 @@
           height="362"
         />
       </section>
-      <div class="page-footer__wrapper">
+      <div class="page-footer__container">
         <a class="page-footer__logo logo logo--footer">
           <img
             class="logo__image logo__image--footer"

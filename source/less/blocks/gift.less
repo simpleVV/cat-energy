@@ -1,0 +1,25 @@
+.gift {
+  outline: 1px solid blue;
+}
+
+.gift__description {
+  outline: 1px solid green;
+
+  font-size: 16px;
+  line-height: 20px;
+
+  text-align: center;
+  color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .gift__description {
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gift__description {
+    text-align: center;
+  }
+}

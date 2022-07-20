@@ -1,0 +1,46 @@
+.intro {
+  outline: 2px solid blue;
+  font-family: @font-family-oswald;
+}
+
+.intro__container {
+  outline: 2px solid red;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.intro__title {
+  outline: 2px solid green;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: @font-weight-base;
+
+  // color: @white;
+}
+
+.intro__slogan {
+  outline: 2px solid green;
+  line-height: 14px;
+  // color: @white;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .intro__container {
+    // padding-left: 30px;
+    // padding-right: 30px;
+  }
+
+  .intro__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: @black;
+  }
+
+  .intro__slogan {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

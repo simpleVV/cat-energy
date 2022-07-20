@@ -1,0 +1,111 @@
+.example {
+  outline: 2px solid blue;
+
+  font-family: @font-family-oswald;
+  background-color: @grey-ea;
+}
+
+.example__container {
+  outline: 2px solid green;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.example__title {
+  outline: 2px solid green;
+
+  margin: 0;
+
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: @font-weight-base;
+}
+
+.example__description {
+  outline: 2px solid green;
+
+  margin: 0;
+
+  font-family: @font-family-arial;
+  color: @grey-44;
+}
+
+.example__stats {
+  outline: 2px solid green;
+}
+
+.example__stats-item {
+  outline: 2px solid red;
+}
+
+.example__stats-value {
+  outline: 2px solid green;
+
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__stats-name {
+  outline: 2px solid green;
+
+  color: @grey-44;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__cost {
+  outline: 2px solid green;
+
+  margin: 0;
+
+  line-height: 20px;
+
+  text-align: center;
+}
+
+.slider__caption {
+  outline: 2px solid green;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    background-color: @white;
+  }
+
+  .example__container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__stats-value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__stats-name {
+    font-size: @font-size-base;
+    line-height: 14px;
+  }
+
+  .example__cost {
+    font-size: 20px;
+  }
+
+  .slider__caption {
+    font-size: 20px;
+  }
+}

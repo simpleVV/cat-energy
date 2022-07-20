@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <title>Подбор программ Cat Energy</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__layout">
+      <div class="page-header__container">
         <a class="page-header__logo logo logo--header" href="index.html">
           <img
             class="logo__image logo__image--header"
@@ -20,13 +21,15 @@
         <nav class="main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="#">Главная</a>
+              <a class="site-list__link" href="#">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="site-list__link" href="catalog.html"
+                >Каталог продукции</a
+              >
             </li>
             <li class="site-list__item site-list__item--active">
-              <a href="#">Подбор программы</a>
+              <a class="site-list__link" href="#">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -38,7 +41,7 @@
 
       <section class="questionnaire">
         <h2 class="visually-hidden">Анкета питомца</h2>
-        <div class="questionnaire__layout">
+        <div class="questionnaire__container">
           <p class="questionnaire__intro">
             Заполните анкету, и мы подберем программу питания для вашего кота
           </p>
@@ -191,7 +194,7 @@
     </main>
 
     <footer class="page-footer">
-      <!-- <div class="page-footer__layout"></div> -->
+      <!-- <div class="page-footer__container"></div> -->
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
         <b class="contacts__intro">Приглашаем к сотрудничеству дилеров!</b>
