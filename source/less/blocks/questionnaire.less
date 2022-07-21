@@ -1,0 +1,94 @@
+.questionnaire {
+  outline: 1px solid blue;
+
+  font-family: @font-family-oswald;
+}
+
+.questionnaire__container {
+  outline: 1px solid green;
+}
+
+.questionnaire__intro {
+  outline: 1px solid green;
+
+  margin: 0;
+
+  text-transform: uppercase;
+}
+
+.questionnaire__form-wrapper {
+  outline: 1px solid green;
+}
+
+.questionnaire__input-wrapper,
+.questionnaire__fieldset {
+  outline: 1px solid green;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.questionnaire__fieldset {
+  border: none;
+}
+
+.questionnaire__input-wrapper--weight {
+  border-top: 1px solid @grey-d9;
+  border-bottom: 1px solid @grey-d9;
+}
+
+.questionnaire__name,
+.questionnaire__input,
+.questionnaire__textarea {
+  outline: 1px solid green;
+
+  font-size: 16px;
+  text-transform: uppercase;
+  color: @grey-44;
+}
+
+.questionnaire__name--weight {
+  color: @grey-22;
+}
+
+.questionnaire__name--optional {
+  color: @black;
+}
+
+.questionnaire__input {
+  border: 1px solid @grey-e7;
+}
+
+.questionnaire__title {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.questionnaire__required {
+  margin: 0;
+
+  line-height: 16px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .questionnaire__intro {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .questionnaire__name,
+  .questionnaire__input,
+  .questionnaire__textarea {
+    font-size: 20px;
+  }
+
+  .questionnaire__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .questionnaire__required {
+    font-size: 16px;
+  }
+}

@@ -37,7 +37,7 @@
     </header>
 
     <main class="page-main">
-      <h1 class="page-title">Подбор программы</h1>
+      <h1 class="page-main__title">Подбор программы</h1>
 
       <section class="questionnaire">
         <h2 class="visually-hidden">Анкета питомца</h2>
@@ -79,114 +79,135 @@
                   type="text"
                   value="7"
                 />
-                <div class="questionnaire__input-wrapper">
-                  <input
-                    class="questionnaire__input questionnaire__input--radio"
-                    id="weight-loss"
-                    type="radio"
-                    name="program"
-                    checked
-                  />
-                  <label class="questionnaire__name" for="weight-loss">
-                    похудение
-                  </label>
-                  <input
-                    class="questionnaire__input questionnaire__input--radio"
-                    id="weight-gain"
-                    type="radio"
-                    name="program"
-                  />
-                  <label class="questionnaire__name" for="weight-gain">
-                    Набор массы
-                  </label>
-                  <input
-                    class="questionnaire__input questionnaire__input--radio"
-                    id="advice"
-                    type="radio"
-                    name="program"
-                  />
-                  <label class="questionnaire__name" for="advice">
-                    Не знаю (Нужен ваш совет)
-                  </label>
-                </div>
-                <fieldset class="questionnaire__fieldset">
-                  <legend class="questionnaire__title">
-                    Контактные данные (владельца кота)
-                  </legend>
-                  <div class="questionnaire__input-wrapper">
-                    <label class="questionnaire__name" for="email">
-                      E-mail:*
-                    </label>
-                    <input
-                      class="questionnaire__input questionnaire__input--text"
-                      id="email"
-                      type="email"
-                      value="kuklachev@gmail.com"
-                    />
-                    <label class="questionnaire__name" for="phone">
-                      Телефон:*
-                    </label>
-                    <input
-                      class="questionnaire__input questionnaire__input--text"
-                      id="phone"
-                      type="tel"
-                      value="8 (960) 900-60-90"
-                    />
-                  </div>
-                </fieldset>
-                <fieldset class="questionnaire__fieldset">
-                  <legend class="questionnaire__title">Комментарий</legend>
-                  <textarea class="questionnaire__textarea">
-                    Расскажите обо всех повадках кота
-                  </textarea>
-                </fieldset>
-                <fieldset class="questionnaire__fieldset">
-                  <legend class="questionnaire__title">Дополнительно</legend>
-                  <div class="questionnaire__input-wrapper">
-                    <input
-                      class="questionnaire__input questionnaire__input--checkbox"
-                      id="sweetener"
-                      type="checkbox"
-                      name="sweetener"
-                      checked
-                    />
-                    <label class="questionnaire__name" for="sweetener">
-                      Cахарозаменитель
-                    </label>
-                    <input
-                      class="questionnaire__input questionnaire__input--checkbox"
-                      id="water"
-                      type="checkbox"
-                      name="water"
-                    />
-                    <label class="questionnaire__name" for="water">
-                      Gитьевая вода
-                    </label>
-                    <input
-                      class="questionnaire__input questionnaire__input--checkbox"
-                      id="milk"
-                      type="checkbox"
-                      name="milk"
-                    />
-                    <label class="questionnaire__name" for="milk">
-                      Молоко
-                    </label>
-                    <input
-                      class="questionnaire__input questionnaire__input--checkbox"
-                      id="vitamins"
-                      type="checkbox"
-                      name="vitamins"
-                    />
-                    <label class="questionnaire__name" for="vitamins">
-                      Витамины
-                    </label>
-                  </div>
-                </fieldset>
-                <button class="questionnaire__button button" type="submit">
-                  Отправить заявку
-                </button>
-                <p class="questionnaire__required">* — Обязательные поля</p>
               </div>
+              <div
+                class="questionnaire__input-wrapper questionnaire__input-wrapper--weight"
+              >
+                <input
+                  class="questionnaire__input questionnaire__input--radio"
+                  id="weight-loss"
+                  type="radio"
+                  name="program"
+                  checked
+                />
+                <label
+                  class="questionnaire__name questionnaire__name--weight"
+                  for="weight-loss"
+                >
+                  похудение
+                </label>
+                <input
+                  class="questionnaire__input questionnaire__input--radio"
+                  id="weight-gain"
+                  type="radio"
+                  name="program"
+                />
+                <label
+                  class="questionnaire__name questionnaire__name--weight"
+                  for="weight-gain"
+                >
+                  Набор массы
+                </label>
+                <input
+                  class="questionnaire__input questionnaire__input--radio"
+                  id="advice"
+                  type="radio"
+                  name="program"
+                />
+                <label
+                  class="questionnaire__name questionnaire__name--weight"
+                  for="advice"
+                >
+                  Не знаю (Нужен ваш совет)
+                </label>
+              </div>
+              <fieldset class="questionnaire__fieldset">
+                <legend class="questionnaire__title">
+                  Контактные данные (владельца кота)
+                </legend>
+
+                <label class="questionnaire__name" for="email">
+                  E-mail:*
+                </label>
+                <input
+                  class="questionnaire__input questionnaire__input--text"
+                  id="email"
+                  type="email"
+                  value="kuklachev@gmail.com"
+                />
+                <label class="questionnaire__name" for="phone">
+                  Телефон:*
+                </label>
+                <input
+                  class="questionnaire__input questionnaire__input--text"
+                  id="phone"
+                  type="tel"
+                  value="8 (960) 900-60-90"
+                />
+              </fieldset>
+              <fieldset class="questionnaire__fieldset">
+                <legend class="questionnaire__title">Комментарий</legend>
+                <textarea class="questionnaire__textarea">
+                  Расскажите обо всех повадках кота
+                </textarea>
+              </fieldset>
+              <fieldset class="questionnaire__fieldset">
+                <legend class="questionnaire__title">Дополнительно</legend>
+
+                <input
+                  class="questionnaire__input questionnaire__input--checkbox"
+                  id="sweetener"
+                  type="checkbox"
+                  name="sweetener"
+                  checked
+                />
+                <label
+                  class="questionnaire__name questionnaire__name--optional"
+                  for="sweetener"
+                >
+                  Cахарозаменитель
+                </label>
+                <input
+                  class="questionnaire__input questionnaire__input--checkbox"
+                  id="water"
+                  type="checkbox"
+                  name="water"
+                />
+                <label
+                  class="questionnaire__name questionnaire__name--optional"
+                  for="water"
+                >
+                  Gитьевая вода
+                </label>
+                <input
+                  class="questionnaire__input questionnaire__input--checkbox"
+                  id="milk"
+                  type="checkbox"
+                  name="milk"
+                />
+                <label
+                  class="questionnaire__name questionnaire__name--optional"
+                  for="milk"
+                >
+                  Молоко
+                </label>
+                <input
+                  class="questionnaire__input questionnaire__input--checkbox"
+                  id="vitamins"
+                  type="checkbox"
+                  name="vitamins"
+                />
+                <label
+                  class="questionnaire__name questionnaire__name--optional"
+                  for="vitamins"
+                >
+                  Витамины
+                </label>
+              </fieldset>
+              <button class="questionnaire__button button" type="submit">
+                Отправить заявку
+              </button>
+              <p class="questionnaire__required">* — Обязательные поля</p>
             </div>
           </form>
         </div>
