@@ -1,6 +1,7 @@
 .button {
   // font-family: @font-family-oswald;
-  color: @white;
+  display: block;
+
   background-color: @green-basic;
   text-transform: uppercase;
   text-decoration: none;
@@ -20,9 +21,23 @@
   color: @grey-44;
 }
 
+.button--green {
+  background-color: @green-basic;
+  color: @white;
+
+  &:hover,
+  &:focus {
+    background-color: @green-button-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
 @media (min-width: @tablet-width) {
   .button {
     // font-size: 20px;
-    line-height: 0;
+    // line-height: 0;
   }
 }

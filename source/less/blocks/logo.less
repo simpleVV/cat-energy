@@ -1,4 +1,22 @@
 .logo {
   display: block;
   outline: 2px solid green;
+  outline-offset: -2px;
+}
+
+.logo__image--header {
+  width: 33px;
+  height: 37px;
+}
+
+@media (min-width: @tablet-width) {
+  .logo {
+    width: 174px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo {
+    width: 202px;
+  }
 }

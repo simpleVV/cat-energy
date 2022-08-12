@@ -19,6 +19,9 @@
           Cat Energy
         </a>
         <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link" href="#">Главная</a>
@@ -37,19 +40,23 @@
 
       <section class="page-header__intro intro">
         <div class="intro__container">
-          <h2 class="intro__title">Функциональное питание для котов</h2>
-          <p class="intro__slogan">Занялся собой? Займись котом!</p>
-          <img
-            class="intro__image"
-            src="https://via.placeholder.com/33x38"
-            width="280"
-            height="270"
-            alt="Питание Gat Energy со вкусом курицы"
-          />
+          <div class="intro__content-container">
+            <h2 class="intro__title">Функциональное питание для котов</h2>
+            <p class="intro__slogan">Занялся собой? Займись котом!</p>
+            <a class="button button--green intro__button" href="catalog.html"
+              >Подобрать программу
+            </a>
+          </div>
+          <div class="intro__image-container">
+            <img
+              class="intro__image"
+              src="./img/index-can-mobile@1x.png"
+              width="280"
+              height="270"
+              alt="Питание Gat Energy со вкусом курицы"
+            />
+          </div>
         </div>
-        <a class="button intro__button" href="catalog.html"
-          >Подобрать программу
-        </a>
       </section>
     </header>
 
